@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aec4cb76-7048-44e7-b160-2bdcafb57b53" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/application/use_case/edit_message.usecase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/use_case/post_message.usecase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/message.repository.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/message.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infra/stub_date_provider.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/editing_message.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/follow_user.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/message.builder.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/messaging.fixtures.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posting_message.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/message.in_memory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infra/message.in_memory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/message.repository.interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/message.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/post_message.usecase.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stub_date_provider.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/editing_message.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/date_provider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/posting_message.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/posting_message.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/view_timeline.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/view_timeline.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view_timeline.usecase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/use_case/view_timeline.usecase.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,31 +47,37 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="2NmY5dIky8jquJstDwuHCcFT02e" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "le-nom-de-ta-branche",
-    "last_opened_file_path": "/Users/damien/Lab/crafty",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/damien/Lab/crafty/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/damien/Lab/crafty/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;le-nom-de-ta-branche&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/damien/Lab/crafty&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/damien/Lab/crafty/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/damien/Lab/crafty/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/infra" />
+      <recent name="$PROJECT_DIR$/src/domain" />
+      <recent name="$PROJECT_DIR$/src/application/use_case" />
       <recent name="$PROJECT_DIR$/src/tests" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -76,7 +96,8 @@
       <workItem from="1680270543602" duration="2274000" />
       <workItem from="1680856522659" duration="1646000" />
       <workItem from="1680858198654" duration="1104000" />
-      <workItem from="1680859311178" duration="1036000" />
+      <workItem from="1680859311178" duration="8435000" />
+      <workItem from="1681478828532" duration="5899000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,5 @@
-import { MessageRepository } from "./message.repository.interface";
-import { Message } from "./message";
+import { MessageRepository } from "../domain/message.repository.interface";
+import { Message } from "../domain/message";
 
 export class InMemoryMessageRepository implements MessageRepository {
   messages = new Map<string, Message>([]);
@@ -18,7 +18,7 @@ export class InMemoryMessageRepository implements MessageRepository {
     );
   }
 
-  getMessageById(id: string): Message {
+  getById(id: string): Message {
     return this.messages.get(id);
   }
 }

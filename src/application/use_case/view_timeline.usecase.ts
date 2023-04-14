@@ -1,5 +1,6 @@
-import { MessageRepository } from "./message.repository.interface";
-import { DateProvider } from "./post_message.usecase";
+import { MessageRepository } from "../../domain/message.repository.interface";
+import { DateProvider } from "../../domain/date_provider";
+
 
 const ONE_MINUTE_IN_SECONDS = 60000;
 
@@ -10,7 +11,11 @@ export class ViewTimelineUseCase {
   ) {
   }
 
-  async handle({ user }: { user: string }): Promise<any[]> {
+  async handle({
+                 user
+               }: {
+    user: string;
+  }): Promise<{ author: string; text: string; publicationTime: string }[]> {
     const messageOfUser = await this.messageRepository.getAllOfUser(user);
     return messageOfUser
       .sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime())
